@@ -174,3 +174,131 @@
   line-height: 30px;
   color: #ffffff;
 }
+
+.reservation {
+  height: 100vh;
+  background-color: #d9e7ff;
+  background-image: url("../images/background_reservation.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  justify-items: center;
+}
+
+.reservation__title {
+  padding-top: 100px;
+  margin: 0;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 44px;
+  line-height: 52px;
+}
+
+.form {
+  max-width: 385px;
+}
+.reservation__form {
+  margin-top: 80px;
+  margin-bottom: 120px;
+}
+
+.form__fieldset {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+.form__label {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.form__input {
+  height: 60px;
+  padding: 15px 20px;
+  margin: 8px 0 32px 0px;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 30px;
+}
+
+.form__input::placeholder {
+  color: #838383;
+}
+.form__input::-webkit-input-placeholder {
+  color: #838383;
+}
+.form__input::-moz-placeholder {
+  color: #838383;
+}
+.form__input::-ms-input-placeholder {
+  color: #838383;
+}
+
+.form__button {
+  background-color: #2f80ed;
+  height: 60px;
+  margin-bottom: 32px;
+  border-radius: 4px;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  color: #ffffff;
+}
+
+.form__button:hover {
+  opacity: 70%;
+}
+
+.form__label_checkbox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.form__checkbox {
+  width: 20px;
+  height: 20px;
+  margin: 0 12px 0 0;
+}
+
+.form__input_accept {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+}
+
+.form__pseudo-input {
+  display: inline-block;
+  vertical-align: middle;
+  width: 16px;
+  height: 16px;
+  border: 1px solid black;
+  border-radius: 4px;
+  background-color: #ffffff;
+}
+
+.form__input_accept:checked + .form__pseudo-input {
+  background-image: url("../images/check.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #2f80ed;
+}
+
+.form__input_accept:hover + .form__pseudo-input {
+  box-shadow: 0 0 5px #13335e;
+}
